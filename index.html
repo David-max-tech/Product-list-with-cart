@@ -7,68 +7,109 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Product list with cart</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Desserts
+    <main class="container">
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+        <!-- PRODUCTS -->
+        <section class="products-section">
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+            <h1>Desserts</h1>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
+            <div class="products">
 
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
+                <!-- Product 1 -->
+               <article class="product">
 
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
+    <div class="product-image">
 
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
+        <picture>
+            <source 
+                media="(max-width: 767px)" 
+                srcset="./assets/images/image-waffle-mobile.jpg">
 
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
+            <source 
+                media="(max-width: 1023px)" 
+                srcset="./assets/images/image-waffle-tablet.jpg">
 
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
+            <img 
+                src="./assets/images/image-waffle-desktop.jpg"
+                alt="Waffle with Berries">
+        </picture>
 
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
+    </div>
 
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+    <div class="product-info">
+        <p class="category">Waffle</p>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+        <h2>Waffle with Berries</h2>
+
+        <p class="price">$6.50</p>
+
+        <button class="add-to-cart">
+            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+            Add to Cart
+        </button>
+    </div>
+
+</article>>
+
+
+                <!-- Product 2 -->
+                <article class="product">
+                    <div class="product-image">
+                        <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="Crème Brûlée">
+                    </div>
+
+                    <div class="product-info">
+                        <p class="category">Crème Brûlée</p>
+                        <h2>Vanilla Bean Crème Brûlée</h2>
+                        <p class="price">$7.00</p>
+
+                        <button class="add-to-cart">
+                            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- Product 3 -->
+                <article class="product">
+                    <div class="product-image">
+                        <img src="./assets/images/image-macaron-desktop.jpg" alt="Macaron">
+                    </div>
+
+                    <div class="product-info">
+                        <p class="category">Macaron</p>
+                        <h2>Macaron Mix of Five</h2>
+                        <p class="price">$8.00</p>
+
+                        <button class="add-to-cart">
+                            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CART -->
+        <aside class="cart">
+
+            <h2>Your Cart</h2>
+
+            <div class="cart-content">
+                <p>Your added items will appear here</p>
+            </div>
+
+        </aside>
+
+    </main>
+
 </body>
 </html>
