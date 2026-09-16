@@ -1,0 +1,158 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf8f5;
+    color: #2d1b14;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-section h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================
+   PRODUCT
+========================= */
+
+.product {
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-image picture,
+.product-image img {
+    display: block;
+    width: 100%;
+}
+
+.product-image img {
+    border-radius: 10px;
+}
+
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.product-info {
+    padding-top: 35px;
+}
+
+.category {
+    font-size: 14px;
+    color: #876f66;
+    margin-bottom: 6px;
+}
+
+.product h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #c73b0f;
+}
+
+
+/* =========================
+   ADD TO CART BUTTON
+========================= */
+
+.add-to-cart {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 270px;
+
+    width: 160px;
+    height: 45px;
+
+    border: 1px solid #c9bdb8;
+    border-radius: 25px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-to-cart img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+.cart {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    height: fit-content;
+}
+
+.cart h2 {
+    color: #c73b0f;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cart-content {
+    text-align: center;
+    color: #876f66;
+}
+
+.cart-content p {
+    font-size: 14px;
+}
