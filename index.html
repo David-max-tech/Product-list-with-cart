@@ -1,232 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product list with cart</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="./assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Product list with cart</title>
 </head>
 <body>
 
     <main class="container">
 
-        <!-- PRODUCTS -->
+        <!-- =========================
+             PRODUCTS
+        ========================== -->
+
         <section class="products-section">
 
             <h1>Desserts</h1>
 
+            <!-- ALL 9 PRODUCTS ARE INSIDE THE SAME GRID -->
             <div class="products">
 
-                <!-- Product 1 -->
-               <article class="product">
-
-    <div class="product-image">
-
-        <picture>
-            <source 
-                media="(max-width: 767px)" 
-                srcset="./assets/images/image-waffle-mobile.jpg">
-
-            <source 
-                media="(max-width: 1023px)" 
-                srcset="./assets/images/image-waffle-tablet.jpg">
-
-            <img 
-                src="./assets/images/image-waffle-desktop.jpg"
-                alt="Waffle with Berries">
-        </picture>
-
-    </div>
-
-    <div class="product-info">
-        <p class="category">Waffle</p>
-
-        <h2>Waffle with Berries</h2>
-
-        <p class="price">$6.50</p>
-
-        <button class="add-to-cart">
-            <img src="./assets/images/icon-add-to-cart.svg" alt="">
-            Add to Cart
-        </button>
-    </div>
-
-</article>>
-
-
-                <!-- Product 2 -->
+                <!-- =========================
+                     PRODUCT 1
+                ========================== -->
 
                 <article class="product">
+
                     <div class="product-image">
-                       <picture>
-            <source 
-                media="(max-width: 767px)" 
-                srcset="./assets/images/image-creme-brulee-mobile.jpg">
+                        <picture>
 
-            <source 
-                media="(max-width: 1023px)" 
-                srcset="./assets/images/image-creme-brulee-tablet.jpg">
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-waffle-mobile.jpg">
 
-            <img 
-                src="./assets/images/image-creme-brulee-desktop.jpg"
-                alt="Vanilla Bean Crème Brûlée">
-        </picture>
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-waffle-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-waffle-desktop.jpg"
+                                alt="Waffle with Berries">
+
+                        </picture>
                     </div>
 
                     <div class="product-info">
+
+                        <p class="category">Waffle</p>
+
+                        <h2>Waffle with Berries</h2>
+
+                        <p class="price">$6.50</p>
+
+                        <button class="add-to-cart">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =========================
+                     PRODUCT 2
+                ========================== -->
+
+                <article class="product">
+
+                    <div class="product-image">
+                        <picture>
+
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-creme-brulee-mobile.jpg">
+
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-creme-brulee-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-creme-brulee-desktop.jpg"
+                                alt="Vanilla Bean Crème Brûlée">
+
+                        </picture>
+                    </div>
+
+                    <div class="product-info">
+
                         <p class="category">Crème Brûlée</p>
+
                         <h2>Vanilla Bean Crème Brûlée</h2>
+
                         <p class="price">$7.00</p>
 
                         <button class="add-to-cart">
-                            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
                             Add to Cart
                         </button>
+
                     </div>
+
                 </article>
 
-                <!-- Product 3 -->
+
+                <!-- =========================
+                     PRODUCT 3
+                ========================== -->
 
                 <article class="product">
+
                     <div class="product-image">
                         <picture>
-            <source 
-                media="(max-width: 767px)" 
-                srcset="./assets/images/image-macaron-mobile.jpg">
 
-            <source 
-                media="(max-width: 1023px)" 
-                srcset="./assets/images/image-macaron-tablet.jpg">
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-macaron-mobile.jpg">
 
-            <img 
-                src="./assets/images/image-macaron-desktop.jpg"
-                alt="Macaron Mix of Five">
-        </picture>
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-macaron-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-macaron-desktop.jpg"
+                                alt="Macaron Mix of Five">
+
+                        </picture>
                     </div>
 
                     <div class="product-info">
+
                         <p class="category">Macaron</p>
+
                         <h2>Macaron Mix of Five</h2>
+
                         <p class="price">$8.00</p>
 
                         <button class="add-to-cart">
-                            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
                             Add to Cart
                         </button>
+
                     </div>
+
                 </article>
 
-                 <!-- Product 4 -->
+
+                <!-- =========================
+                     PRODUCT 4
+                ========================== -->
 
                 <article class="product">
+
                     <div class="product-image">
                         <picture>
-            <source 
-                media="(max-width: 767px)" 
-                srcset="./assets/images/image-tiramisu-mobile.jpg">
 
-            <source 
-                media="(max-width: 1023px)" 
-                srcset="./assets/images/image-tiramisu-tablet.jpg">
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-tiramisu-mobile.jpg">
 
-            <img 
-                src="./assets/images/image-tiramisu-desktop.jpg"
-                alt="Macaron Mix of Five">
-        </picture>
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-tiramisu-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-tiramisu-desktop.jpg"
+                                alt="Classic Tiramisu">
+
+                        </picture>
                     </div>
 
                     <div class="product-info">
+
                         <p class="category">Tiramisu</p>
+
                         <h2>Classic Baklava</h2>
+
                         <p class="price">$5.50</p>
 
                         <button class="add-to-cart">
-                            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
                             Add to Cart
                         </button>
+
                     </div>
+
                 </article>
 
-                 <!-- Product 5 -->
+
+                <!-- =========================
+                     PRODUCT 5
+                ========================== -->
 
                 <article class="product">
+
                     <div class="product-image">
                         <picture>
-            <source 
-                media="(max-width: 767px)" 
-                srcset="./assets/images/image-baklava-mobile.jpg">
 
-            <source 
-                media="(max-width: 1023px)" 
-                srcset="./assets/images/image-baklava-tablet.jpg">
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-baklava-mobile.jpg">
 
-            <img 
-                src="./assets/images/image-baklava-desktop.jpg"
-                alt="Macaron Mix of Five">
-        </picture>
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-baklava-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-baklava-desktop.jpg"
+                                alt="Pistachio Baklava">
+
+                        </picture>
                     </div>
 
                     <div class="product-info">
+
                         <p class="category">Baklava</p>
+
                         <h2>Pistachio Baklava</h2>
+
                         <p class="price">$4.00</p>
 
                         <button class="add-to-cart">
-                            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
                             Add to Cart
                         </button>
+
                     </div>
+
                 </article>
 
-                 <!-- Product 6 -->
+
+                <!-- =========================
+                     PRODUCT 6
+                ========================== -->
 
                 <article class="product">
+
                     <div class="product-image">
                         <picture>
-            <source 
-                media="(max-width: 767px)" 
-                srcset="./assets/images/image-meringue-mobile.jpg">
 
-            <source 
-                media="(max-width: 1023px)" 
-                srcset="./assets/images/image-meringue-tablet.jpg">
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-meringue-mobile.jpg">
 
-            <img 
-                src="./assets/images/image-meringue-desktop.jpg"
-                alt="Macaron Mix of Five">
-        </picture>
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-meringue-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-meringue-desktop.jpg"
+                                alt="Lemon Meringue Pie">
+
+                        </picture>
                     </div>
 
                     <div class="product-info">
+
                         <p class="category">Baklava</p>
-                        <h2>Lemon Meringue pie </h2>
+
+                        <h2>Lemon Meringue Pie</h2>
+
                         <p class="price">$5.00</p>
 
                         <button class="add-to-cart">
-                            <img src="./assets/images/icon-add-to-cart.svg" alt="">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
                             Add to Cart
                         </button>
+
                     </div>
+
                 </article>
+
+
+                <!-- =========================
+                     PRODUCT 7
+                ========================== -->
+
+                <article class="product">
+
+                    <div class="product-image">
+                        <picture>
+
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-cake-mobile.jpg">
+
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-cake-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-cake-desktop.jpg"
+                                alt="Red Velvet Cake">
+
+                        </picture>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="category">Cake</p>
+
+                        <h2>Red Velvet Cake</h2>
+
+                        <p class="price">$4.50</p>
+
+                        <button class="add-to-cart">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =========================
+                     PRODUCT 8
+                ========================== -->
+
+                <article class="product">
+
+                    <div class="product-image">
+                        <picture>
+
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-brownie-mobile.jpg">
+
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-brownie-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-brownie-thumbnail.jpg"
+                                alt="Salted Caramel Brownie">
+
+                        </picture>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="category">Brownie</p>
+
+                        <h2>Salted Caramel Brownie</h2>
+
+                        <p class="price">$5.50</p>
+
+                        <button class="add-to-cart">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =========================
+                     PRODUCT 9
+                ========================== -->
+
+                <article class="product">
+
+                    <div class="product-image">
+                        <picture>
+
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./assets/images/image-panna-cotta-mobile.jpg">
+
+                            <source
+                                media="(max-width: 1023px)"
+                                srcset="./assets/images/image-panna-cotta-tablet.jpg">
+
+                            <img
+                                src="./assets/images/image-panna-cotta-desktop.jpg"
+                                alt="Vanilla Panna Cotta">
+
+                        </picture>
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="category">Panna Cotta</p>
+
+                        <h2>Vanilla Panna Cotta</h2>
+
+                        <p class="price">$6.50</p>
+
+                        <button class="add-to-cart">
+                            <img
+                                src="./assets/images/icon-add-to-cart.svg"
+                                alt="">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
             </div>
+            <!-- END .products -->
 
         </section>
+        <!-- END PRODUCTS SECTION -->
 
 
-        <!-- CART -->
+        <!-- =========================
+             CART
+        ========================== -->
+
         <aside class="cart">
 
             <h2>Your Cart</h2>
 
             <div class="cart-content">
+
                 <p>Your added items will appear here</p>
+
             </div>
 
         </aside>
 
     </main>
-
-</body>
+ </body>
 </html>
+
