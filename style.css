@@ -23,15 +23,12 @@ button {
 }
 
 
-/* =========================
-   MAIN CONTAINER
-========================= */
+/* MAIN CONTAINER */
 
 .container {
     width: min(1200px, 92%);
     margin: 0 auto;
     padding: 50px 0;
-    
     display: grid;
     grid-template-columns: minmax(0, 1fr) 330px;
     gap: 35px;
